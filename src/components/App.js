@@ -12,6 +12,7 @@ import {
 import { fetchPosts } from "../actions/posts";
 import Home from "./Home";
 import Page404 from "./Page404";
+import Navbar from "./Navbar";
 class App extends Component {
   componentDidMount() {
     this.props.dispatch(fetchPosts());
@@ -20,6 +21,7 @@ class App extends Component {
     const { posts } = this.props;
     return (
       <Router>
+        <Navbar />
         <Switch>
           <Route
             exact

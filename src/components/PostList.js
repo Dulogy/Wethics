@@ -7,6 +7,7 @@ class PostsList extends Component {
     const { posts } = this.props;
     return (
       <div className="posts-list">
+        <h2>All Blogs</h2>
         {posts.map((post) => (
           <div className="post-wrapper" key={post._id}>
             <div className="post-header">
@@ -16,8 +17,20 @@ class PostsList extends Component {
               <span>Status : {post.status}</span>
               <p>{post.uagb_excerpt}</p>
             </div>
+            <br></br>
           </div>
         ))}
+        <button
+          style={{
+            textAlign: "center",
+            height: "32px",
+            width: "120px",
+            borderRadius: "8px",
+          }}
+          className="load-button"
+        >
+          Load More Posts
+        </button>
       </div>
     );
   }

@@ -6,7 +6,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="nav">
-        <div className="left-div">Blogs</div>
+        <div className="left-div"></div>
         <div className="search-container">
           <img
             className="search-icon"
